@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Anonymous Functions</title>
+    <!--<script type="text/javascript" src="Scripts/jquery-2.0.3.js"></script>-->
+    <script type="text/javascript" >
+
+        var bar = function foo()
+        {
+            // ...
+        };
+
+        bar(); // works
+
+
+        (function foo()
+        {
+            // bar
+        })(); // works
+
+
+        function foo()
+        {
+        }(); // does not!
+
+    </script>
+</head>
+<body>
+    <div id="foo" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Equals</title>
+        <script type="text/javascript">
+            function foo()
+            {
+                var first = (1 == 1); // true
+                var second = '1' == 1; // true
+                var third = '0' == false;
+
+
+                debugger;
+
+            }
+
+            foo();
+
+            function bar()
+            {
+                var first = (1 === 1); // true
+                var second = '1' === 1; // true
+                var third = '0' === false;
+
+
+                debugger;
+
+            }
+
+            bar();
+        </script>
+    </head>
+    <body>
+        <div id="foo" />
+    </body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>For testing</title>
+    <script type="text/javascript">
+
+        function foo()
+        { // move to line 8. Don't matter
+            
+            return { // try to move this parentesis to the second line
+                bar: "baz",
+            };
+        }
+
+
+        var result = foo().bar;
+
+    </script>
+</head>
+<body>
+    <div id="foo" />
+</body>
+</html>

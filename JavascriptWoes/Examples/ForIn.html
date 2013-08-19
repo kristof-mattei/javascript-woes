@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>For In</title>
+    <script type="text/javascript" src="~/Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript" >
+        
+        var chars = [];
+
+        for (var x = 65; x <= 90; x++) {
+            chars.push(String.fromCharCode(x));
+        }
+
+        bar = "";
+
+        for (var c in chars) {
+
+
+            // c is not a char
+            bar += c;
+            bar += " : ";
+            // it's an indexer
+            bar += chars[c];
+            bar += "<br />";
+        }
+
+        $(function() {
+            $("#foo").html(bar);
+        });
+
+
+    </script>
+</head>
+<body>
+    <div id="foo" />
+</body>
+</html>
